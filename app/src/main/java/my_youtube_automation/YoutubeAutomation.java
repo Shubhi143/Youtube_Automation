@@ -86,31 +86,14 @@ public class YoutubeAutomation {
     Thread.sleep(2000);
 
 List<WebElement> sections=driver.findElements(By.xpath("//*[@id='endpoint']/tp-yt-paper-item/yt-formatted-string"));
+System.out.println("Searching for movies  ");
 for(WebElement selection: sections){
     if(selection.getText().equals("Movies")){
         selection.click();
+        break;
     }
+    
 }
-// WebElement viewAll=driver.findElement(By.xpath("//*[@id='top-level-buttons-computed']/ytd-button-renderer/yt-button-shape/a/yt-touch-feedback-shape/div/div[2]"));
-// viewAll.click();
-Thread.sleep(2000);
-Boolean Status=false;
-List<WebElement> movies=driver.findElements(By.xpath("//*[@id='items']/ytd-grid-movie-renderer/a"));
-for(WebElement movie:movies){
-    if(movie.getText().contains("A") || movie.getText().contains("Comedy")){
-        Status=true;
-    }
-    else{
-       Status=false;
-    }
-}
-if(Status){
-    System.out.println("The movie is marked as 'A' for Mature and is either 'Comedy' or 'Animation'.");
-}
-else{
-    System.out.println("The movie does not meet the criteria.");
-}
-
 System.out.println("End of Testcase ");
     }
 }
