@@ -14,8 +14,10 @@ public class App {
         YoutubeAutomation.createDriver();
     
          youtubeAutomation.start();
-        youtubeAutomation.search("Selenium");
-        
+       // youtubeAutomation.search("Selenium");
+       youtubeAutomation.SearchAboutUs();
+
+        youtubeAutomation.ViewMovieSelections();
         youtubeAutomation.endTest();
 }
 }
