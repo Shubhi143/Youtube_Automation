@@ -24,7 +24,7 @@ Go to the “Music” tab and in the 1st section, scroll to the extreme right. P
 1. Added Selenium Wrapper Methods
 2. Added TestNG
 3. Implemented Soft Assert
-4. Implemented Apache POI
+
 
 ## Required Software to Install:
 ```
