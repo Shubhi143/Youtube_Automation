@@ -5,7 +5,7 @@ The Application Under Test is YouTube.
 
 The Aim of this project is to search for Videos and Explore Sections such as Movies, Music, News etc...
 
-This YouTube Automation project consists of 6 Testcases in Total.
+This YouTube Automation project consists of 4 Testcases in Total.
 
 # TestCase 01 Description
 Go to www.youtube.com.  Check the Current URL using Assert Statements
